@@ -107,7 +107,7 @@ const menu = [
   const menuItems = document.querySelector(".section-center");
 
   function addMenuItemsToHTML() {
-    menuItems.innerHTML= '';
+    menuItems.innerHTML= "";
     let menuList = [];
       if (arguments.length === 0) {
         menuList = menu;
@@ -117,22 +117,22 @@ const menu = [
     } 
 
     menuList.forEach(element => {
-      let outerDiv = document.createElement('div');
-      outerDiv.classList.add('menu-items', 'col-lg-6', 'col-sm-12');
-      let itemPhoto = document.createElement('img');
-      itemPhoto.classList.add('photo');
+      let outerDiv = document.createElement("div");
+      outerDiv.classList.add("menu-items", "col-lg-6", "col-sm-12");
+      let itemPhoto = document.createElement("img");
+      itemPhoto.classList.add("photo");
       itemPhoto.src = element.img;
-      let menuInfoDiv = document.createElement('div');
-      menuInfoDiv.classList.add('menu-info');
-      let menuTitleDiv = document.createElement('div');
-      menuTitleDiv.classList.add('menu-title');
-      let itemTitle = document.createElement('h4');
+      let menuInfoDiv = document.createElement("div");
+      menuInfoDiv.classList.add("menu-info");
+      let menuTitleDiv = document.createElement("div");
+      menuTitleDiv.classList.add("menu-title");
+      let itemTitle = document.createElement("h4");
       itemTitle.innerText = element.title;
-      let itemPrice = document.createElement('h4');
+      let itemPrice = document.createElement("h4");
       itemPrice.innerText = element.price;
       menuTitleDiv.append(itemTitle, itemPrice);
-      let menuTextDiv = document.createElement('div');
-      menuTextDiv.classList.add('menu-text');
+      let menuTextDiv = document.createElement("div");
+      menuTextDiv.classList.add("menu-text");
       menuTextDiv.innerText = element.desc;
       menuInfoDiv.append(menuTitleDiv, menuTextDiv);
       outerDiv.append(itemPhoto,menuInfoDiv);
